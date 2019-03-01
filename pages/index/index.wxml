@@ -3,7 +3,7 @@
   <view class="page__bd">
     <view class="section section_gap" wx:for-items="{{dataRequest}}" wx:for-item="item" wx:key="{{index}}">
       <view class="section__ctn">
-        <image style="background-color: #eeeeee;" mode="aspectFit" src="https://wsbsmile.top/images/{{item.fileName}}"></image>
+        <image style="background-color: #eeeeee;" mode="widthFix" src="https://wsbsmile.top/images/{{item.fileName}}"></image>
       </view>
     </view>
   </view>

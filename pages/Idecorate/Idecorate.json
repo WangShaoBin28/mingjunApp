@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "i-button": "../../utils/dist/button/index",
+    "i-switch": "../../utils/dist/switch/index"
+  },
+  "navigationBarTitleText": "我要装修"
 }
