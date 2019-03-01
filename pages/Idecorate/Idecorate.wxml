@@ -1,0 +1,5 @@
+<!--pages/Idecorate/Idecorate.wxml-->
+
+<view>
+<text>我要装修！</text>
+</view>
