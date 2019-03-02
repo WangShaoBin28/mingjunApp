@@ -5,8 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
-  },
+      switch1 : false
+  },onChange(event){
+    const detail = event.detail;
+    this.setData({
+        'switch1' : detail.value
+    })
+    console.log(this.switch1)
+},
 
   /**
    * 生命周期函数--监听页面加载

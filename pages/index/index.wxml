@@ -1,10 +1,42 @@
 <!--index.wxml-->
 <view class="container">
   <view class="page__bd">
-    <view class="section section_gap" wx:for-items="{{dataRequest}}" wx:for-item="item" wx:key="{{index}}">
-      <view class="section__ctn">
-        <image style="background-color: #eeeeee;" mode="widthFix" src="https://wsbsmile.top/images/{{item.fileName}}"></image>
-      </view>
+    <i-notice-bar icon="systemprompt" class="aa" closable loop>
+      此效果图仅提供演示，具体还的看实际效果！
+    </i-notice-bar>
+    <view class='topTabSwiper'>
+      <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>中式</view>
+      <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>欧式</view>
+      <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>现代</view>
     </view>
+    <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="section section_gap" wx:for-items="{{dataRequest}}" wx:for-item="item" wx:key="{{index}}">
+            <view class="section__ctn">
+              <image style="background-color: #eeeeee;" mode="widthFix" src="https://wsbsmile.top/images/{{item.fileName}}"></image>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="section section_gap" wx:for-items="{{dataRequest}}" wx:for-item="item" wx:key="{{index}}">
+            <view class="section__ctn">
+              <image style="background-color: #eeeeee;" mode="widthFix" src="https://wsbsmile.top/images/{{item.fileName}}"></image>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="section section_gap" wx:for-items="{{dataRequest}}" wx:for-item="item" wx:key="{{index}}">
+            <view class="section__ctn">
+              <image style="background-color: #eeeeee;" mode="widthFix" src="https://wsbsmile.top/images/{{item.fileName}}"></image>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
   </view>
 </view>

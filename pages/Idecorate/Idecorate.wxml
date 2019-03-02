@@ -3,7 +3,7 @@
 <view>
 <text>我要装修！</text>
 <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
-<i-switch value="false" size="large" bind:change="onChange" slot="footer">
+<i-switch value="{{switch1}}" size="large" bind:change="onChange" slot="footer">
             <view slot="open">开启</view>
             <view slot="close">关闭</view>
         </i-switch>

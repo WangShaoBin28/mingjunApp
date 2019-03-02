@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "i-notice-bar": "../../utils/dist/notice-bar/index",
+     "i-tabs": "../../utils/dist/tabs/index",
+     "i-tab": "../../utils/dist/tab/index"
+  },
    "navigationBarTitleText": "图篇浏览"
 }
